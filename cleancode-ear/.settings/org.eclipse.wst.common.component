@@ -11,5 +11,8 @@
         <dependent-module archiveName="cleancode-persistence-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/cleancode-persistence/cleancode-persistence">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="cleancode-contracts-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/cleancode-contracts/cleancode-contracts">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
