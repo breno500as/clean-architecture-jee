@@ -1,15 +1,51 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.cleancode.wildfly</groupId>
-  <artifactId>cleancode-wildfly</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-  
-  	<module>cleancode-contracts</module>
-  	<module>cleancode-core</module>
-  	<module>cleancode-ear</module>
-  	<module>cleancode-web-api</module>
-  	<module>cleancode-persistence</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cleancode.wildfly</groupId>
+	<artifactId>cleancode-wildfly</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>cleancode-contracts</module>
+		<module>cleancode-core</module>
+		<module>cleancode-ear</module>
+		<module>cleancode-web-api</module>
+		<module>cleancode-persistence</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>11</java.version>
+		<ejb.version>3.2</ejb.version>
+		<version.dependency.javaee>8.0</version.dependency.javaee>
+		<version.surefire.plugin>2.22.0</version.surefire.plugin>
+		<version.plugin.compiler>3.8.0</version.plugin.compiler>
+		<version.plugin.ejb>3.0.1</version.plugin.ejb>
+		<version.plugin.war>3.2.2</version.plugin.war>
+		<version.plugin.ear>2.6</version.plugin.ear>
+		<target>default</target>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${version.plugin.compiler}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<useIncrementalCompilation>false</useIncrementalCompilation>
+					<debug>true</debug>
+					<optimize>true</optimize>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${version.surefire.plugin}</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>

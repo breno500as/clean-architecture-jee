@@ -13,4 +13,10 @@
   <module>
     <ejb>cleancode-core-0.0.1-SNAPSHOT.jar</ejb>
   </module>
+  <module>
+    <ejb>cleancode-persistence-0.0.1-SNAPSHOT.jar</ejb>
+  </module>
+  <module>
+    <ejb>cleancode-contracts-0.0.1-SNAPSHOT.jar</ejb>
+  </module>
 </application>

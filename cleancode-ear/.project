@@ -3,6 +3,10 @@
 	<name>cleancode-ear</name>
 	<comment></comment>
 	<projects>
+		<project>cleancode-contracts</project>
+		<project>cleancode-core</project>
+		<project>cleancode-persistence</project>
+		<project>cleancode-web-api</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
