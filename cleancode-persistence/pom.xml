@@ -42,6 +42,12 @@
 			<version>${version.hibernate}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.cleancode.wildfly</groupId>
+			<artifactId>cleancode-contracts</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
 	</dependencies>
 
 </project>
