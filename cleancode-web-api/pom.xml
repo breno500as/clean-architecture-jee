@@ -7,6 +7,13 @@
 		<artifactId>cleancode-wildfly</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+	<properties>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+	</properties>
+
+
 	<artifactId>cleancode-web-api</artifactId>
 	<packaging>war</packaging>
 	<build>
@@ -29,5 +36,7 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
+
 
 </project>
