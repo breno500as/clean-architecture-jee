@@ -7,15 +7,8 @@
 		<artifactId>cleancode-wildfly</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
+	<artifactId>cleancode-contract</artifactId>
 	<packaging>ejb</packaging>
-	<artifactId>cleancode-persistence</artifactId>
-
-	<properties>
-		<version.hibernate>5.4.22.Final</version.hibernate>
-	</properties>
-
-
 	<build>
 		<plugins>
 			<plugin>
@@ -30,27 +23,11 @@
 	</build>
 
 	<dependencies>
-
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>${version.hibernate}</version>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${beanvalidation.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-contract</artifactId>
-			<version>${project.version}</version>
-			<type>ejb</type>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>${version.dependency.javaee}</version>
-			<scope>provided</scope>
-		</dependency>
-
 	</dependencies>
-
 </project>

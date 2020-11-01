@@ -7,17 +7,19 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>cleancode-contracts</module>
+		<module>cleancode-contract</module>
 		<module>cleancode-core</module>
 		<module>cleancode-ear</module>
 		<module>cleancode-web-api</module>
 		<module>cleancode-persistence</module>
+		<module>cleancode-report</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
 		<ejb.version>3.2</ejb.version>
+		<beanvalidation.version>2.0.1.Final</beanvalidation.version>
 		<version.dependency.javaee>8.0</version.dependency.javaee>
 		<version.surefire.plugin>2.22.0</version.surefire.plugin>
 		<version.plugin.compiler>3.8.0</version.plugin.compiler>
@@ -49,11 +51,6 @@
 		</plugins>
 	</build>
 	<dependencies>
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>${version.dependency.javaee}</version>
-			<scope>provided</scope>
-		</dependency>
+		
 	</dependencies>
 </project>

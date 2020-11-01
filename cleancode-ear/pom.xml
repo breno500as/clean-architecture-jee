@@ -23,8 +23,8 @@
 					<modules>
 						<webModule>
 							<groupId>com.cleancode.wildfly</groupId>
-							<artifactId>cleancode-web-api</artifactId>
-							<contextRoot>/cleancode-web-api</contextRoot>
+							<artifactId>cleancode-entrypoint</artifactId>
+							<contextRoot>/cleancode-entrypoint</contextRoot>
 						</webModule>
 						<ejbModule>
 							<groupId>com.cleancode.wildfly</groupId>
@@ -36,7 +36,11 @@
 						</ejbModule>
 						<ejbModule>
 							<groupId>com.cleancode.wildfly</groupId>
-							<artifactId>cleancode-contracts</artifactId>
+							<artifactId>cleancode-contract</artifactId>
+						</ejbModule>
+						<ejbModule>
+							<groupId>com.cleancode.wildfly</groupId>
+							<artifactId>cleancode-report</artifactId>
 						</ejbModule>
 					</modules>
 				</configuration>
@@ -55,7 +59,14 @@
 		
 		<dependency>
 			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-contracts</artifactId>
+			<artifactId>cleancode-contract</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.cleancode.wildfly</groupId>
+			<artifactId>cleancode-report</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>
@@ -69,7 +80,7 @@
 
 		<dependency>
 			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-web-api</artifactId>
+			<artifactId>cleancode-entrypoint</artifactId>
 			<version>${project.version}</version>
 			<type>war</type>
 		</dependency>
