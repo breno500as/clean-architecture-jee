@@ -10,7 +10,11 @@
 
 	<packaging>ejb</packaging>
 	<artifactId>cleancode-persistence</artifactId>
- 
+
+	<properties>
+		<version.hibernate>5.4.22.Final</version.hibernate>
+	</properties>
+
 
 	<build>
 		<plugins>
@@ -30,6 +34,12 @@
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>${version.dependency.javaee}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${version.hibernate}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
