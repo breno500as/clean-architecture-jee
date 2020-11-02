@@ -32,7 +32,7 @@
 						</ejbModule>
 						<ejbModule>
 							<groupId>com.cleancode.wildfly</groupId>
-							<artifactId>cleancode-persistence</artifactId>
+							<artifactId>cleancode-data-provider</artifactId>
 						</ejbModule>
 						<ejbModule>
 							<groupId>com.cleancode.wildfly</groupId>
@@ -52,7 +52,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-persistence</artifactId>
+			<artifactId>cleancode-data-provider</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>

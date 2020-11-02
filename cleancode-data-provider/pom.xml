@@ -9,7 +9,7 @@
 	</parent>
 
 	<packaging>ejb</packaging>
-	<artifactId>cleancode-persistence</artifactId>
+	<artifactId>cleancode-data-provider</artifactId>
 
 	<properties>
 		<version.hibernate>5.4.22.Final</version.hibernate>

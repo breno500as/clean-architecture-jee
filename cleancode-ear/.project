@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>cleancode-core</project>
-		<project>cleancode-persistence</project>
 		<project>cleancode-entrypoint</project>
 	</projects>
 	<buildSpec>
