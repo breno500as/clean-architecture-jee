@@ -1,6 +1,6 @@
 package com.cleancode.persistence.dao;
 
-import javax.ejb.Stateless;
+import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -8,7 +8,7 @@ import com.cleancode.contracts.dao.BookDAO;
 import com.cleancode.contracts.dto.BookDTO;
 import com.cleancode.persistence.entity.BookEntity;
 
-@Stateless
+@RequestScoped
 public class BookDAOImpl implements BookDAO {
 	
 	@PersistenceContext

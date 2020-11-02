@@ -1,6 +1,6 @@
 package com.cleancode.persistence.dao;
 
-import javax.ejb.Stateless;
+import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -8,7 +8,7 @@ import com.cleancode.contracts.dao.LibraryDAO;
 import com.cleancode.contracts.dto.LibraryDTO;
 import com.cleancode.persistence.entity.LibraryEntity;
 
-@Stateless
+@RequestScoped
 public class LibraryDAOImpl implements LibraryDAO {
 	
 	@PersistenceContext
