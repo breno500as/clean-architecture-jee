@@ -1,4 +1,4 @@
-package com.cleancode.contracts.report;
+package com.cleancode.contract.report;
 
 public interface CreateReportBook {
 

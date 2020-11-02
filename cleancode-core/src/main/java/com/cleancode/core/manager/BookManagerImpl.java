@@ -3,12 +3,12 @@ package com.cleancode.core.manager;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import com.cleancode.contracts.dao.BookDAO;
-import com.cleancode.contracts.dao.LibraryDAO;
-import com.cleancode.contracts.dto.BookDTO;
-import com.cleancode.contracts.dto.LibraryDTO;
-import com.cleancode.contracts.manager.BookManager;
-import com.cleancode.contracts.report.CreateReportBook;
+import com.cleancode.contract.dao.BookDAO;
+import com.cleancode.contract.dao.LibraryDAO;
+import com.cleancode.contract.dto.BookDTO;
+import com.cleancode.contract.dto.LibraryDTO;
+import com.cleancode.contract.manager.BookManager;
+import com.cleancode.contract.report.CreateReportBook;
 
 @Stateless
 public class BookManagerImpl implements BookManager {

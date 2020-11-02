@@ -1,26 +1,21 @@
-package com.cleancode.contracts.dto;
+package com.cleancode.contract.dto;
 
-import javax.validation.constraints.NotNull;
-
-public class BookDTO {
+public class LibraryDTO {
 
 	private Long id;
 
-	
-	@NotNull(message = "Falhou")
 	private String nome;
 
-	public BookDTO() {
+	public LibraryDTO() {
 
 	}
 
-	public BookDTO(Long id, String nome) {
+	public LibraryDTO(Long id, String nome) {
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public BookDTO(String nome) {
-
+	public LibraryDTO(String nome) {
 		this.nome = nome;
 	}
 

@@ -4,8 +4,8 @@ import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.cleancode.contracts.dao.LibraryDAO;
-import com.cleancode.contracts.dto.LibraryDTO;
+import com.cleancode.contract.dao.LibraryDAO;
+import com.cleancode.contract.dto.LibraryDTO;
 import com.cleancode.persistence.entity.LibraryEntity;
 
 @RequestScoped

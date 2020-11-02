@@ -4,8 +4,8 @@ import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.cleancode.contracts.dao.BookDAO;
-import com.cleancode.contracts.dto.BookDTO;
+import com.cleancode.contract.dao.BookDAO;
+import com.cleancode.contract.dto.BookDTO;
 import com.cleancode.persistence.entity.BookEntity;
 
 @RequestScoped

@@ -11,8 +11,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.cleancode.contracts.dto.BookDTO;
-import com.cleancode.contracts.manager.BookManager;
+import com.cleancode.contract.dto.BookDTO;
+import com.cleancode.contract.manager.BookManager;
 
 @Path("/books")
 @Produces(MediaType.APPLICATION_JSON)
