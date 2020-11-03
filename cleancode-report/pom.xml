@@ -11,6 +11,7 @@
 	<packaging>ejb</packaging>
 	<artifactId>cleancode-report</artifactId>
 
+
 	<build>
 		<plugins>
 			<plugin>
