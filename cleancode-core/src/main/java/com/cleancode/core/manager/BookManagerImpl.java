@@ -3,33 +3,28 @@ package com.cleancode.core.manager;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import com.cleancode.contract.dao.BookDAO;
-import com.cleancode.contract.dao.LibraryDAO;
-import com.cleancode.contract.dto.BookDTO;
-import com.cleancode.contract.dto.LibraryDTO;
-import com.cleancode.contract.manager.BookManager;
-import com.cleancode.contract.report.CreateReportBook;
+import com.cleancode.core.contract.manager.BookManager;
+import com.cleancode.core.contract.manager.LibraryManager;
+import com.cleancode.core.model.dto.BookDTO;
+import com.cleancode.core.model.dto.LibraryDTO;
 
 @Stateless
-public class BookManagerImpl implements BookManager {
-
+public class BookManagerImpl extends CrudManagerImpl<BookDTO> implements BookManager {
+	
+	
 	@Inject
-	private BookDAO repository;
-
-	@Inject
-	private LibraryDAO libraryRepository;
-
-	@Inject
-	private CreateReportBook createReportBook;
+	private LibraryManager libraryManager;
 
 	@Override
-	public BookDTO persist(BookDTO bookDTO) {
-		BookDTO b = this.repository.persist(bookDTO);
-		this.createReportBook.create();
-		this.libraryRepository.persist(new LibraryDTO("teste"));
-		this.createReportBook.create();
-		return b;
+	public BookDTO save(BookDTO dto) {
 
+		final BookDTO b = super.save(dto);
+
+		final LibraryDTO l = this.libraryManager.save(new LibraryDTO("trump"));
+		
+		System.out.println(l);
+		
+		return b;
 	}
 
 }

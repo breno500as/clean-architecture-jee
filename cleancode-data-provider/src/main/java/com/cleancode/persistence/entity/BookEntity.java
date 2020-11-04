@@ -8,16 +8,21 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "book")
-public class BookEntity {
+public class BookEntity extends BaseEntity {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8940159810542122752L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private String nome;
-	
+
 	public BookEntity() {
-	 
+
 	}
 
 	public BookEntity(String nome) {

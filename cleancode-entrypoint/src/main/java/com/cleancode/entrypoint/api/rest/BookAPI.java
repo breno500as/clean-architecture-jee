@@ -11,8 +11,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.cleancode.contract.dto.BookDTO;
-import com.cleancode.contract.manager.BookManager;
+import com.cleancode.core.contract.dao.BookDAO;
+import com.cleancode.core.model.dto.BookDTO;
 
 @Path("/books")
 @Produces(MediaType.APPLICATION_JSON)
@@ -22,12 +22,12 @@ public class BookAPI {
 	
 	
 	@Inject
-	private BookManager ibookManager;
+	private BookDAO ibookManager;
 	
 	 
 	@POST
-	public Response cria(@Valid BookDTO bookDTO) {
-		BookDTO b = this.ibookManager.persist(bookDTO);
+	public Response save(@Valid BookDTO bookDTO) {
+		BookDTO b = this.ibookManager.save(bookDTO);
 		return Response.status(Status.CREATED).entity(b).build();
 	}
 

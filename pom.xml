@@ -7,7 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>cleancode-contract</module>
 		<module>cleancode-core</module>
 		<module>cleancode-ear</module>
 		<module>cleancode-entrypoint</module>

@@ -1,24 +1,18 @@
 package com.cleancode.persistence.dao;
 
 import javax.enterprise.context.RequestScoped;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
-import com.cleancode.contract.dao.BookDAO;
-import com.cleancode.contract.dto.BookDTO;
+import com.cleancode.core.contract.dao.BookDAO;
+import com.cleancode.core.model.dto.BookDTO;
+import com.cleancode.persistence.converter.BookMapper;
 import com.cleancode.persistence.entity.BookEntity;
 
 @RequestScoped
-public class BookDAOImpl implements BookDAO {
-	
-	@PersistenceContext
-	private EntityManager em;
+public class BookDAOImpl extends CrudDAOImpl<BookDTO, BookEntity> implements BookDAO {
 
 	@Override
-	public BookDTO persist(BookDTO bookDTO) {
-	    final BookEntity bEntity = new BookEntity(bookDTO.getNome());
-		this.em.persist(bEntity);
-		return new BookDTO(bEntity.getNome());
+	public BookMapper getMapper() {
+		return new BookMapper();
 	}
 
 }

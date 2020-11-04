@@ -8,7 +8,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "library")
-public class LibraryEntity {
+public class LibraryEntity extends BaseEntity {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7504464886400643788L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

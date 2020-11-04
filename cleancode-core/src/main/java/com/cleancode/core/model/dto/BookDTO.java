@@ -1,12 +1,16 @@
-package com.cleancode.contract.dto;
+package com.cleancode.core.model.dto;
 
 import javax.validation.constraints.NotNull;
 
-public class BookDTO {
+public class BookDTO extends BaseDTO {
 
 	private Long id;
 
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2050808459071457482L;
+
 	@NotNull(message = "Falhou")
 	private String nome;
 

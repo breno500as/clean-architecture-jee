@@ -1,6 +1,6 @@
-package com.cleancode.contract.dto;
+package com.cleancode.core.model.dto;
 
-public class LibraryDTO {
+public class LibraryDTO extends BaseDTO {
 
 	private Long id;
 
