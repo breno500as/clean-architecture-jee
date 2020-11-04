@@ -49,7 +49,7 @@ public abstract class CrudDAOImpl<DTO extends BaseDTO, ENTITY extends BaseEntity
 
 	@Override
 	public Optional<DTO> findOptionalById(Long id) {
-		return null;
+		 return Optional.ofNullable(this.findById(id));
 	}
 
 }
