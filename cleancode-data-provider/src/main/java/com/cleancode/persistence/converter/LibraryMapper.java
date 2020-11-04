@@ -7,12 +7,12 @@ public class LibraryMapper extends BaseMapper<LibraryDTO, LibraryEntity> {
 
 	@Override
 	public LibraryDTO mapToDto(LibraryEntity entity) {
-		return new LibraryDTO(entity.getId(),entity.getNome());
+		return new LibraryDTO(entity.getId(), entity.getNome(), entity.getTipo());
 	}
 
 	@Override
 	public LibraryEntity mapToEntity(LibraryDTO dto) {
-		return new LibraryEntity(dto.getNome());
+		return new LibraryEntity(dto.getNome(), dto.getTipo());
 	}
-	
+
 }

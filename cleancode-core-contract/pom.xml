@@ -25,19 +25,22 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>${beanvalidation.version}</version>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>${cdi.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.ejb</groupId>
 			<artifactId>javax.ejb-api</artifactId>
 			<version>${ejb.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
-
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${beanvalidation.version}</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>

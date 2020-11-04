@@ -20,12 +20,15 @@ public class LibraryEntity extends BaseEntity {
 	private Long id;
 
 	private String nome;
-	
+
+	private String tipo;
+
 	public LibraryEntity() {
 	}
-	
-	public LibraryEntity(String nome) {
+
+	public LibraryEntity(String nome, String tipo) {
 		this.nome = nome;
+		this.tipo = tipo;
 	}
 
 	public Long getId() {
@@ -42,6 +45,14 @@ public class LibraryEntity extends BaseEntity {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 }

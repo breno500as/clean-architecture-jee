@@ -19,6 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
 		<ejb.version>3.2</ejb.version>
+		<cdi.version>2.0</cdi.version>
 		<beanvalidation.version>2.0.1.Final</beanvalidation.version>
 		<version.dependency.javaee>8.0</version.dependency.javaee>
 		<version.surefire.plugin>2.22.0</version.surefire.plugin>

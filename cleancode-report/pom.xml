@@ -26,8 +26,6 @@
 	</build>
 
 	<dependencies>
-
-
 		<dependency>
 			<groupId>com.cleancode.wildfly</groupId>
 			<artifactId>cleancode-core-contract</artifactId>
@@ -35,15 +33,12 @@
 			<type>ejb</type>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>${version.dependency.javaee}</version>
 			<scope>provided</scope>
 		</dependency>
-
-
 	</dependencies>
 
 </project>
