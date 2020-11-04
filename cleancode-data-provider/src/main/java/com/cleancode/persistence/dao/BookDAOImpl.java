@@ -3,7 +3,7 @@ package com.cleancode.persistence.dao;
 import javax.enterprise.context.RequestScoped;
 
 import com.cleancode.core.contract.dao.BookDAO;
-import com.cleancode.core.model.dto.BookDTO;
+import com.cleancode.core.contract.dto.BookDTO;
 import com.cleancode.persistence.converter.BookMapper;
 import com.cleancode.persistence.entity.BookEntity;
 

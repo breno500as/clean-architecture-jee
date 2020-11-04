@@ -39,7 +39,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-core</artifactId>
+			<artifactId>cleancode-core-contract</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 			<scope>provided</scope>

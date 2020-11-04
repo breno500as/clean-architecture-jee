@@ -1,6 +1,6 @@
 package com.cleancode.persistence.converter;
 
-import com.cleancode.core.model.dto.BaseDTO;
+import com.cleancode.core.contract.dto.BaseDTO;
 import com.cleancode.persistence.entity.BaseEntity;
 
 public abstract class BaseMapper<DTO extends BaseDTO, ENTITY extends BaseEntity> {

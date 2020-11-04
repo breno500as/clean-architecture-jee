@@ -36,7 +36,7 @@
 						</ejbModule>
 						<ejbModule>
 							<groupId>com.cleancode.wildfly</groupId>
-							<artifactId>cleancode-contract</artifactId>
+							<artifactId>cleancode-core-contract</artifactId>
 						</ejbModule>
 						<ejbModule>
 							<groupId>com.cleancode.wildfly</groupId>
@@ -59,7 +59,7 @@
 		
 		<dependency>
 			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-contract</artifactId>
+			<artifactId>cleancode-core-contract</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>

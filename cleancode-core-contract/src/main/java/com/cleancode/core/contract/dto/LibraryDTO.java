@@ -1,4 +1,4 @@
-package com.cleancode.core.model.dto;
+package com.cleancode.core.contract.dto;
 
 public class LibraryDTO extends BaseDTO {
 

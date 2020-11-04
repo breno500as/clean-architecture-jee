@@ -36,17 +36,20 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>${beanvalidation.version}</version>
-			<scope>provided</scope>
-		</dependency>
+
 
 		<dependency>
 			<groupId>javax.ejb</groupId>
 			<artifactId>javax.ejb-api</artifactId>
 			<version>${ejb.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.cleancode.wildfly</groupId>
+			<artifactId>cleancode-core-contract</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
 			<scope>provided</scope>
 		</dependency>
 

@@ -5,7 +5,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import com.cleancode.contract.exception.NegocioException;
+import com.cleancode.core.contract.exception.NegocioException;
 
 /**
  * Classe responsável por capturar e manipular os erros lançados através da {@link NegocioException}

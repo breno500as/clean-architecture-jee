@@ -7,10 +7,8 @@
 		<artifactId>cleancode-wildfly</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
+	<artifactId>cleancode-core-contract</artifactId>
 	<packaging>ejb</packaging>
-	<artifactId>cleancode-report</artifactId>
-
 
 	<build>
 		<plugins>
@@ -26,24 +24,20 @@
 	</build>
 
 	<dependencies>
-
-
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
-			<artifactId>cleancode-core-contract</artifactId>
-			<version>${project.version}</version>
-			<type>ejb</type>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${beanvalidation.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>${version.dependency.javaee}</version>
+			<groupId>javax.ejb</groupId>
+			<artifactId>javax.ejb-api</artifactId>
+			<version>${ejb.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
 
 	</dependencies>
-
 </project>

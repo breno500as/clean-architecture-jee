@@ -12,7 +12,7 @@
 		<module>cleancode-entrypoint</module>
 		<module>cleancode-data-provider</module>
 		<module>cleancode-report</module>
-		<module>cleancode-contract</module>
+		<module>cleancode-core-contract</module>
 	</modules>
 
 	<properties>
@@ -28,7 +28,6 @@
 		<version.plugin.ear>2.6</version.plugin.ear>
 		<target>default</target>
 	</properties>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -50,7 +49,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
-		
-	</dependencies>
 </project>

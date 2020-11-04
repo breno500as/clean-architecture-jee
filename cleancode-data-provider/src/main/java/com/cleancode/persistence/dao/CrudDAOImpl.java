@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import javax.inject.Inject;
 
 import com.cleancode.core.contract.dao.CrudDAO;
-import com.cleancode.core.model.dto.BaseDTO;
+import com.cleancode.core.contract.dto.BaseDTO;
 import com.cleancode.persistence.converter.BaseMapper;
 import com.cleancode.persistence.entity.BaseEntity;
 

@@ -11,8 +11,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.cleancode.core.contract.dao.BookDAO;
-import com.cleancode.core.model.dto.BookDTO;
+import com.cleancode.core.contract.dto.BookDTO;
+import com.cleancode.core.contract.manager.BookManager;
 
 @Path("/books")
 @Produces(MediaType.APPLICATION_JSON)
@@ -22,7 +22,7 @@ public class BookAPI {
 	
 	
 	@Inject
-	private BookDAO ibookManager;
+	private BookManager ibookManager;
 	
 	 
 	@POST

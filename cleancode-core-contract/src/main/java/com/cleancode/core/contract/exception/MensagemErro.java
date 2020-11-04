@@ -1,4 +1,4 @@
-package com.cleancode.contract.exception;
+package com.cleancode.core.contract.exception;
 
 public class MensagemErro extends Mensagem {
  

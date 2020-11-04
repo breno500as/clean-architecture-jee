@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import com.cleancode.contract.exception.MensagemErro;
+import com.cleancode.core.contract.exception.MensagemErro;
 
 @Provider
 public class ConstraintViolationExceptionHandler implements ExceptionMapper<ConstraintViolationException> {
