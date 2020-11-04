@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.cleancode.wildfly</groupId>
-		<artifactId>cleancode-wildfly</artifactId>
+		<groupId>com.cleancode.jee</groupId>
+		<artifactId>cleancode-jee</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent> 
 	<artifactId>cleancode-ear</artifactId>
@@ -22,24 +22,24 @@
 					<generateApplicationXml>true</generateApplicationXml>
 					<modules>
 						<webModule>
-							<groupId>com.cleancode.wildfly</groupId>
+							<groupId>com.cleancode.jee</groupId>
 							<artifactId>cleancode-entrypoint</artifactId>
 							<contextRoot>/cleancode-entrypoint</contextRoot>
 						</webModule>
 						<ejbModule>
-							<groupId>com.cleancode.wildfly</groupId>
+							<groupId>com.cleancode.jee</groupId>
 							<artifactId>cleancode-core</artifactId>
 						</ejbModule>
 						<ejbModule>
-							<groupId>com.cleancode.wildfly</groupId>
+							<groupId>com.cleancode.jee</groupId>
 							<artifactId>cleancode-data-provider</artifactId>
 						</ejbModule>
 						<ejbModule>
-							<groupId>com.cleancode.wildfly</groupId>
+							<groupId>com.cleancode.jee</groupId>
 							<artifactId>cleancode-core-contract</artifactId>
 						</ejbModule>
 						<ejbModule>
-							<groupId>com.cleancode.wildfly</groupId>
+							<groupId>com.cleancode.jee</groupId>
 							<artifactId>cleancode-report</artifactId>
 						</ejbModule>
 					</modules>
@@ -51,35 +51,35 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
+			<groupId>com.cleancode.jee</groupId>
 			<artifactId>cleancode-data-provider</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
+			<groupId>com.cleancode.jee</groupId>
 			<artifactId>cleancode-core-contract</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
+			<groupId>com.cleancode.jee</groupId>
 			<artifactId>cleancode-report</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
+			<groupId>com.cleancode.jee</groupId>
 			<artifactId>cleancode-core</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 		</dependency>
 
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
+			<groupId>com.cleancode.jee</groupId>
 			<artifactId>cleancode-entrypoint</artifactId>
 			<version>${project.version}</version>
 			<type>war</type>

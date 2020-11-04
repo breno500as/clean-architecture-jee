@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.cleancode.wildfly</groupId>
-		<artifactId>cleancode-wildfly</artifactId>
+		<groupId>com.cleancode.jee</groupId>
+		<artifactId>cleancode-jee</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -38,7 +38,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.cleancode.wildfly</groupId>
+			<groupId>com.cleancode.jee</groupId>
 			<artifactId>cleancode-core-contract</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
