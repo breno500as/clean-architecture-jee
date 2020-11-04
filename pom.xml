@@ -12,6 +12,7 @@
 		<module>cleancode-entrypoint</module>
 		<module>cleancode-data-provider</module>
 		<module>cleancode-report</module>
+		<module>cleancode-contract</module>
 	</modules>
 
 	<properties>

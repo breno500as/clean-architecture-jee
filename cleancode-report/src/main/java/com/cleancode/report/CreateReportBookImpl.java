@@ -2,7 +2,8 @@ package com.cleancode.report;
 
 import javax.enterprise.context.ApplicationScoped;
 
-import com.cleancode.contract.report.CreateReportBook;
+import com.cleancode.core.contract.report.CreateReportBook;
+ 
 
 @ApplicationScoped
 public class CreateReportBookImpl implements CreateReportBook {
