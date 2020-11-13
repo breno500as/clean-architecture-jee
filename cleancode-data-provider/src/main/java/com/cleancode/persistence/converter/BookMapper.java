@@ -1,7 +1,7 @@
 package com.cleancode.persistence.converter;
 
-import com.cleancode.core.contract.dto.BookDTO;
-import com.cleancode.persistence.entity.BookEntity;
+import com.cleancode.core.contract.model.dto.BookDTO;
+import com.cleancode.persistence.model.entity.BookEntity;
 
 public class BookMapper extends BaseMapper<BookDTO, BookEntity> {
 

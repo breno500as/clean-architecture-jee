@@ -1,4 +1,4 @@
-package com.cleancode.persistence.entity;
+package com.cleancode.persistence.model.entity;
 
 import java.io.Serializable;
 

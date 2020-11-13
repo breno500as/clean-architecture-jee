@@ -5,11 +5,12 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
 
 import com.cleancode.core.contract.dao.CrudDAO;
-import com.cleancode.core.contract.dto.BaseDTO;
+import com.cleancode.core.contract.model.dto.BaseDTO;
 import com.cleancode.persistence.converter.BaseMapper;
-import com.cleancode.persistence.entity.BaseEntity;
+import com.cleancode.persistence.model.entity.BaseEntity;
 
 public abstract class CrudDAOImpl<DTO extends BaseDTO, ENTITY extends BaseEntity> implements CrudDAO<DTO> {
 
@@ -20,9 +21,7 @@ public abstract class CrudDAOImpl<DTO extends BaseDTO, ENTITY extends BaseEntity
 
 	@Override
 	public List<DTO> findAll(int startPosition, int maxResult) {
-		return this.dao.findAll(startPosition, maxResult)
-				       .stream().map(E -> getMapper().mapToDto(E))
-				       .collect(Collectors.toList());
+		return this.dao.findAll(startPosition, maxResult).stream().map(E -> getMapper().mapToDto(E)).collect(Collectors.toList());
 	}
 
 	@Override
@@ -49,7 +48,12 @@ public abstract class CrudDAOImpl<DTO extends BaseDTO, ENTITY extends BaseEntity
 
 	@Override
 	public Optional<DTO> findOptionalById(Long id) {
-		 return Optional.ofNullable(this.findById(id));
+		return Optional.ofNullable(this.findById(id));
 	}
 
+	
+
+	public EntityManager getEntityManager() {
+		return this.dao.getEntityManager();
+	}
 }

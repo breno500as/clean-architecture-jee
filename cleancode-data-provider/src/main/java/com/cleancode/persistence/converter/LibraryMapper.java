@@ -1,7 +1,7 @@
 package com.cleancode.persistence.converter;
 
-import com.cleancode.core.contract.dto.LibraryDTO;
-import com.cleancode.persistence.entity.LibraryEntity;
+import com.cleancode.core.contract.model.dto.LibraryDTO;
+import com.cleancode.persistence.model.entity.LibraryEntity;
 
 public class LibraryMapper extends BaseMapper<LibraryDTO, LibraryEntity> {
 

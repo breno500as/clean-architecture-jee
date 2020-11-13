@@ -12,7 +12,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-import com.cleancode.persistence.entity.BaseEntity;
+import com.cleancode.persistence.model.entity.BaseEntity;
 
 @Stateless
 public class DAOUtils <ENTITY extends BaseEntity> {
@@ -68,6 +68,10 @@ public class DAOUtils <ENTITY extends BaseEntity> {
 		q.from(this.entityClass());
 
 		return this.entityManager.createQuery(q).getResultStream();
+	}
+	
+	public EntityManager getEntityManager() {
+		return entityManager;
 	}
 
 }

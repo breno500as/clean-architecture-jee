@@ -1,4 +1,4 @@
-package com.cleancode.persistence.entity;
+package com.cleancode.persistence.model.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,13 +7,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "library")
-public class LibraryEntity extends BaseEntity {
+@Table(name = "book")
+public class BookEntity extends BaseEntity {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 7504464886400643788L;
+	private static final long serialVersionUID = -8940159810542122752L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,14 +21,12 @@ public class LibraryEntity extends BaseEntity {
 
 	private String nome;
 
-	private String tipo;
+	public BookEntity() {
 
-	public LibraryEntity() {
 	}
 
-	public LibraryEntity(String nome, String tipo) {
+	public BookEntity(String nome) {
 		this.nome = nome;
-		this.tipo = tipo;
 	}
 
 	public Long getId() {
@@ -45,14 +43,6 @@ public class LibraryEntity extends BaseEntity {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
 	}
 
 }
