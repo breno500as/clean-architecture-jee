@@ -2,7 +2,7 @@ package com.cleancode.report;
 
 import javax.enterprise.context.ApplicationScoped;
 
-import com.cleancode.core.contract.dto.BookDTO;
+import com.cleancode.core.contract.model.dto.BookDTO;
 import com.cleancode.core.contract.report.CreateReportBook;
 
 @ApplicationScoped

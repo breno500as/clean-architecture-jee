@@ -3,7 +3,7 @@ package com.cleancode.core.contract.dao;
 import java.util.List;
 import java.util.Optional;
 
-import com.cleancode.core.contract.dto.BaseDTO;
+import com.cleancode.core.contract.model.dto.BaseDTO;
 
 public interface CrudDAO  <T extends BaseDTO>  {
 

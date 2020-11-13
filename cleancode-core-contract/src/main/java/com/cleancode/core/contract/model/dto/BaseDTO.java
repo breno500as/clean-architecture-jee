@@ -1,4 +1,4 @@
-package com.cleancode.core.contract.dto;
+package com.cleancode.core.contract.model.dto;
 
 import java.io.Serializable;
 

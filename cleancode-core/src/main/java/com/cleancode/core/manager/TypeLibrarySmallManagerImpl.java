@@ -12,7 +12,7 @@ public class TypeLibrarySmallManagerImpl implements TypeLibraryManager {
 
 	@Override
 	public void specificBehavior() {
-		System.out.println("small..");
+		System.out.println("comportamento específico em um manager genérico small..");
 	}
 
 }

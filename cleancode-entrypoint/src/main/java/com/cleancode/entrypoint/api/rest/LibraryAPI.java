@@ -11,24 +11,21 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.cleancode.core.contract.manager.BookManager;
-import com.cleancode.core.contract.model.dto.BookDTO;
+import com.cleancode.core.contract.manager.LibraryManager;
+import com.cleancode.core.contract.model.dto.LibraryDTO;
 
-@Path("/books")
+@Path("/libraries")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @RequestScoped
-public class BookAPI {
-	
-	
+public class LibraryAPI {
+
 	@Inject
-	private BookManager ibookManager;
-	
-	 
+	private LibraryManager libraryManager;
+
 	@POST
-	public Response save(@Valid BookDTO bookDTO) {
-		BookDTO b = this.ibookManager.save(bookDTO);
-		return Response.status(Status.CREATED).entity(b).build();
+	public Response save(@Valid LibraryDTO library) {
+		return Response.status(Status.CREATED).entity(this.libraryManager.save(library)).build();
 	}
 
 }

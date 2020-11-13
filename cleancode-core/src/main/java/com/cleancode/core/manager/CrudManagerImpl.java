@@ -6,8 +6,8 @@ import java.util.Optional;
 import javax.inject.Inject;
 
 import com.cleancode.core.contract.dao.CrudDAO;
-import com.cleancode.core.contract.dto.BaseDTO;
 import com.cleancode.core.contract.manager.CrudManager;
+import com.cleancode.core.contract.model.dto.BaseDTO;
 
 public class CrudManagerImpl<T extends BaseDTO> implements CrudManager<T> {
 	

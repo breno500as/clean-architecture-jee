@@ -3,7 +3,7 @@ package com.cleancode.core.contract.manager;
 import java.util.List;
 import java.util.Optional;
 
-import com.cleancode.core.contract.dto.BaseDTO;
+import com.cleancode.core.contract.model.dto.BaseDTO;
 
 public interface CrudManager <T extends BaseDTO> {
 	
