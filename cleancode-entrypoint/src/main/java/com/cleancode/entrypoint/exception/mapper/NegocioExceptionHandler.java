@@ -1,4 +1,4 @@
-package com.cleancode.entrypoint.mapper;
+package com.cleancode.entrypoint.exception.mapper;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;

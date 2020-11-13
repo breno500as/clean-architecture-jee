@@ -1,4 +1,4 @@
-package com.cleancode.entrypoint.mapper;
+package com.cleancode.entrypoint.exception.mapper;
 
 import java.util.ArrayList;
 import java.util.List;
