@@ -4,6 +4,7 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -29,6 +30,11 @@ public class BookAPI {
 	public Response save(@Valid BookDTO bookDTO) {
 		BookDTO b = this.ibookManager.save(bookDTO);
 		return Response.status(Status.CREATED).entity(b).build();
+	}
+	
+	@GET
+	public Response get() {
+		return Response.status(Status.CREATED).entity(ibookManager.findById(1L)).build();
 	}
 
 }
