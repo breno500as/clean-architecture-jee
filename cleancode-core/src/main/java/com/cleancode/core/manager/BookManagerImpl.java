@@ -22,6 +22,7 @@ public class BookManagerImpl extends CrudManagerImpl<BookDTO> implements BookMan
 	@Inject
 	private CreateReportBook createReportBook;
 
+	
 	@Any
 	@Inject
 	private Instance<TypeLibraryManager> typeLibraryManager;
