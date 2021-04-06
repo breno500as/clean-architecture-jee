@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.cleanarchitecture.jee</groupId>
+		<artifactId>clean-architecture-jee</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent> 
+	<artifactId>clean-architecture-ear</artifactId>
+	<packaging>ear</packaging>
+	<build>
+		<finalName>${project.parent.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>${version.plugin.ear}</version>
+				<configuration>
+					<filtering>true</filtering>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<generateApplicationXml>true</generateApplicationXml>
+					<modules>
+						<webModule>
+							<groupId>com.cleanarchitecture.jee</groupId>
+							<artifactId>clean-architecture-entrypoint</artifactId>
+							<contextRoot>/clean-architecture-entrypoint</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>com.cleanarchitecture.jee</groupId>
+							<artifactId>clean-architecture-core</artifactId>
+						</ejbModule>
+						<ejbModule>
+							<groupId>com.cleanarchitecture.jee</groupId>
+							<artifactId>clean-architecture-data-provider</artifactId>
+						</ejbModule>
+						<ejbModule>
+							<groupId>com.cleanarchitecture.jee</groupId>
+							<artifactId>clean-architecture-core-contract</artifactId>
+						</ejbModule>
+						<ejbModule>
+							<groupId>com.cleanarchitecture.jee</groupId>
+							<artifactId>clean-architecture-report</artifactId>
+						</ejbModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-data-provider</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-core-contract</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-report</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-core</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-entrypoint</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+
+
+
+
+</project>

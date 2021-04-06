@@ -2,17 +2,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.cleancode.jee</groupId>
-	<artifactId>cleancode-jee</artifactId>
+	<groupId>com.cleanarchitecture.jee</groupId>
+	<artifactId>clean-architecture-jee</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>cleancode-core</module>
-		<module>cleancode-ear</module>
-		<module>cleancode-entrypoint</module>
-		<module>cleancode-data-provider</module>
-		<module>cleancode-report</module>
-		<module>cleancode-core-contract</module>
+		<module>clean-architecture-core</module>
+		<module>clean-architecture-ear</module>
+		<module>clean-architecture-entrypoint</module>
+		<module>clean-architecture-data-provider</module>
+		<module>clean-architecture-report</module>
+		<module>clean-architecture-core-contract</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
