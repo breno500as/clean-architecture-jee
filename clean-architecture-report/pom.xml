@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.cleancode.jee</groupId>
-		<artifactId>cleancode-jee</artifactId>
+		<groupId>com.cleanarchitecture.jee</groupId>
+		<artifactId>clean-architecture-jee</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<packaging>ejb</packaging>
-	<artifactId>cleancode-report</artifactId>
+	<artifactId>clean-architecture-report</artifactId>
 
 
 	<build>
@@ -27,8 +27,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.cleancode.jee</groupId>
-			<artifactId>cleancode-core-contract</artifactId>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-core-contract</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 			<scope>provided</scope>

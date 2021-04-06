@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.cleancode.jee</groupId>
-		<artifactId>cleancode-jee</artifactId>
+		<groupId>com.cleanarchitecture.jee</groupId>
+		<artifactId>clean-architecture-jee</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -14,7 +14,7 @@
 	</properties>
 
 
-	<artifactId>cleancode-entrypoint</artifactId>
+	<artifactId>clean-architecture-entrypoint</artifactId>
 	<packaging>war</packaging>
 	<build>
 		<plugins>
@@ -30,8 +30,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.cleancode.jee</groupId>
-			<artifactId>cleancode-core-contract</artifactId>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-core-contract</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
 			<scope>provided</scope>

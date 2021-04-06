@@ -3,11 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.cleancode.jee</groupId>
-		<artifactId>cleancode-jee</artifactId>
+		<groupId>com.cleanarchitecture.jee</groupId>
+		<artifactId>clean-architecture-jee</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>cleancode-core-contract</artifactId>
+
+
+	<artifactId>clean-architecture-core</artifactId>
 	<packaging>ejb</packaging>
 
 	<build>
@@ -23,6 +25,7 @@
 		</plugins>
 	</build>
 
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.enterprise</groupId>
@@ -37,9 +40,10 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>${beanvalidation.version}</version>
+			<groupId>com.cleanarchitecture.jee</groupId>
+			<artifactId>clean-architecture-core-contract</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>

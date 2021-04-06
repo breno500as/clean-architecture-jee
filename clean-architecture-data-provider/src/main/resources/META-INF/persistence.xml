@@ -5,9 +5,9 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
 						http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
-	<persistence-unit name="cleancode-unit" transaction-type="JTA">
+	<persistence-unit name="clean-architecture-unit" transaction-type="JTA">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<jta-data-source>java:/cleanCodeDS</jta-data-source>
+		<jta-data-source>java:/cleanArchitectureDS</jta-data-source>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 			<property name="hibernate.show_sql" value="true" />
