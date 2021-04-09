@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import com.cleancode.core.contract.model.dto.BaseDTO;
 
+
 public interface CrudDAO  <T extends BaseDTO>  {
 
 	public List<T> findAll(final int startPosition, final int maxResult);

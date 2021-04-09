@@ -8,9 +8,15 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<packaging>ejb</packaging>
-	<artifactId>clean-architecture-report</artifactId>
 
+	<properties>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+	</properties>
+
+
+	<artifactId>clean-architecture-report</artifactId>
+    <packaging>ejb</packaging>
 
 	<build>
 		<plugins>
